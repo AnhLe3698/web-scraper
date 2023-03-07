@@ -1,2 +1,4 @@
 /Lib
-/front-end-visual/node_modules/
+node_modules/
+.env
+data1.txt
