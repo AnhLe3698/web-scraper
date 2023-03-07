@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--title-->
+  <title>Kijiji Scaper</title>
+  
+  <!-- icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./resources/logo-icon.png">
+
+  <!--css links-->
+  <link rel="stylesheet" href="./main.css" type="text/css">
+  
+  <!-- resources -->
+  <script src="./resources/jquery_3.6.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+
+  <nav>
+    <div class="logo-container">
+      <img src="./resources/logo.png" alt="Logo" class="logo">
+    </div>
+    <h1 class="title">Kijiji Scraper</h1>
+    <ul>
+      <li><a class="top-nav-link" href="#">Home</a></li>
+      <li><a class="top-nav-link" href="#">About</a></li>
+      <li><a class="top-nav-link" href="#">Contact</a></li>
+    </ul>
+  </nav>
+    <div class="spacer"></div>
+  
+    <div class="row-element">
+      <!-- <div class="read-csv">
+        <form>
+            <label for="csvFileInput"> <strong>CSV File:</strong></label>
+               
+            <input type="file" id="csvFileInput" onchange="handleFiles(this.files)" accept=".csv">
+        </form>
+      </div> -->
+      
+      <form id="submitSearch">
+        <label for="searchTerm">Enter New Search:</label>
+        <input type="text" id="searchTerm" name="searchTerm">
+        <button type="submit">Submit</button>
+      </form>      
+      
+      <!-- ------------ADD BACK LATER-------------------- -->
+      <!-- <form id="submitUrl">
+        <label for="urlInput">Enter URL:</label>
+        <input type="text" id="urlInput" name="urlInput">
+        <button type="submit">Submit</button>
+      </form>       -->
+
+      <form>
+        <label for="search-input">Internal Search:</label>
+        <input type="text" id="search-input" placeholder="Search...">
+      </form>
+
+      <button id="filter-tires" style="margin-left: 20px;">Tire Preset Search</button>
+    </div>
+    
+    <div id="loading-spinner"><img src="./resources/spinner.gif"></div>
+    <div class="card-container container-styles"></div>
+    
+    <button id="back-to-top-btn" class="hidden">Back to top</button>
+
+    
+    <div class="csv-data"></div>  
+    
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/Features/features.js"></script>
+    <script src="./scripts/Features/TiresAndRims/tiresAndRimsFeatures.js"></script>
+    <script src="./scripts/compute/computeFeatures.js"></script>
+</body>
+
+</html>
