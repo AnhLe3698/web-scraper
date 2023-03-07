@@ -77,3 +77,6 @@ Response:
 ]
 ```
 
+## Simple Front-end data visualization
+
+!["screenshot description"](./resources//front-end-visual.png)
